@@ -29,7 +29,7 @@ class _AddNoteFormStateState extends State<AddNoteFormState> {
       autovalidateMode: autoValidateMode,
       key: formKey,
       child: Column(
-        children: [
+        children: [ 
           const SizedBox(height: 32,),
           CustomTextField(
             onSaved: (value) {
