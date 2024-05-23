@@ -36,10 +36,15 @@ class CustomNoteItem extends StatelessWidget {
                 note.subtitle,
                 style: TextStyle(color: Colors.black.withOpacity(0.5), fontSize: 20),
                 ),
-              trailing: const Icon(
+              trailing: IconButton(
+                onPressed: () {
+                  note.delete();
+                }, 
+                icon: const Icon(
                 FontAwesomeIcons.trash,
                 color: Colors.black,
                 size: 22,
+                ),
                 ),
             ),
       
