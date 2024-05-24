@@ -62,6 +62,8 @@ class _EditNoteViewBodyState extends State<EditNoteViewBody> {
               hint: widget.note.subtitle, 
               maxLines: 5,
               ),
+
+              const SizedBox(height: 20,),
             
             EditNoteColorList(note: widget.note),
           ],
